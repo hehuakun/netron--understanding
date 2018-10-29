@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20ED271C-BB09-45DF-BDD6-842ABA827DF8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Entitology</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Netron.GraphLib.Entitology</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetronGraphLibrary\NetronGraphLib.csproj">
+      <Name>NetronGraphLib</Name>
+      <Project>{95C388C8-DD59-4993-BCC3-14A0862A24D8}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Connections\MultiLineConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Connections\ResistantConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Connections\ThermoConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Connections\ZConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboControlShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\TextboxControlShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Diverse\ArrowShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Diverse\DatabaseShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Diverse\HelloShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Diverse\ImageShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Diverse\PanelShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Diverse\RoundPanelShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Diverse\TextBubble.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Diverse\ZNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlowCharting\DecisionShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlowCharting\DocumentShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlowCharting\EllipseShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlowCharting\InputShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlowCharting\IOShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlowCharting\ProcessShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hyperbolic\HyperColor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hyperbolic\HyperSize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UML\ClassDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UML\ClassMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UML\ClassMethodCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UML\ClassProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UML\ClassPropertyCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UML\ClassShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UML\Enums\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UML\InterfaceShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UML\ListViewEx.cs" />
+    <Compile Include="WorkFlow\TaskEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Resources\Class.ico" />
+    <EmbeddedResource Include="Resources\ClassShape.gif" />
+    <EmbeddedResource Include="Resources\ComboControlShape.gif" />
+    <EmbeddedResource Include="Resources\Database.gif" />
+    <EmbeddedResource Include="Resources\down.ico" />
+    <EmbeddedResource Include="Resources\event.ico" />
+    <EmbeddedResource Include="Resources\Interface.gif" />
+    <EmbeddedResource Include="Resources\minus.ico" />
+    <EmbeddedResource Include="Resources\plus.ico" />
+    <EmbeddedResource Include="Resources\PublicMethod.ico" />
+    <EmbeddedResource Include="Resources\PublicProperty.ico" />
+    <EmbeddedResource Include="Resources\SPM.ico" />
+    <EmbeddedResource Include="Resources\SPP.ico" />
+    <EmbeddedResource Include="Resources\task.ico" />
+    <EmbeddedResource Include="Resources\TaskEvent.gif" />
+    <EmbeddedResource Include="Resources\up.ico" />
+    <EmbeddedResource Include="UML\ClassDialog.resx">
+      <DependentUpon>ClassDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UML\ListViewEx.resx">
+      <DependentUpon>ListViewEx.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent>copy /Y "$(SolutionDir)\Entitology\bin\Debug\Entitology.dll" "$(SolutionDir)\Cobalt\bin\Debug\Entitology.dll"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\temp\test\MSHelp.xslt"?>
+<MSHelp>
+  <Head>
+    <runninghead>Xeon HTTP Server</runninghead>
+    <product>The Netron Project</product>
+    <Title> WebRequest</Title>
+  </Head>
+  <nstext>
+    <preamble>CompBrowser is a form that provides built-in capability to list the computers on a network. </preamble>
+    <syntax>
+      <language>Visual Basic</language>
+      <definition>Public Class CompBrowserInherits Form</definition>
+    </syntax>
+    <syntax>
+      <language>Visual Basic</language>
+      <definition>Public Class CompBrowserInherits Form</definition>
+    </syntax>
+    <blocks>
+      <block>
+        <title>							Public Instance Methods							</title>
+        <members>
+          <member>
+            <type>											publicmethod										</type>
+            <name>DrawGripper</name>
+            <description>Internal. See ICommandBarRenderer</description>
+          </member>
+          <member>
+            <type>											publicmethod										</type>
+            <name>DrawLabel</name>
+            <description>Draws a label</description>
+          </member>
+        </members>
+      </block>
+      <block>
+        <title>							Private Instance Methods							</title>
+        <members>
+          <member>
+            <type>											publicmethod										</type>
+            <name>Whatever</name>
+            <description>Internal. <a href="http://netron.sf.net">See ICommandBarRenderer</a></description>
+          </member>
+          <member>
+            <type>											publicmethod										</type>
+            <name>DrawLabel</name>
+            <description>Draws a label</description>
+          </member>
+        </members>
+      </block>
+    </blocks>
+  </nstext>
+  <Footer>
+    <a href="http://netron.sf.net">Copyright 2005 The Netron Project. All Rights Reserved.</a>
+    <br />Xeon MS Help vierwer [2.3.5600.2205]	</Footer>
+</MSHelp>

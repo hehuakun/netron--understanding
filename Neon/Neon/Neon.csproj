@@ -1,0 +1,1239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{242AD318-16D0-4F17-8BC4-A0CCB37075E9}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Neon</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Netron.Neon</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>doc.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.SHDocVw">
+      <HintPath>..\..\Libs\AxInterop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\Libs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SHDocVw">
+      <HintPath>..\..\Libs\Interop.SHDocVw.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.mshtml">
+      <Name>Microsoft.mshtml</Name>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll</HintPath>
+      <AssemblyFolderKey>hklm\primary interop assemblies</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="MsHtmHstInterop">
+      <HintPath>..\..\Libs\MsHtmHstInterop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actinium\Docking\Controls\InertButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\AutoHidePane.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\AutoHidePaneCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\AutoHideStateCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\AutoHideStripBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\AutoHideStripVS2003.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\AutoHideTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\AutoHideTabCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\AutoHideTabVS2003.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\AutoHideWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\AutoHideWindowSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DisplayingDockList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockAreasEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockContentCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPane.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPaneCaptionBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPaneCaptionVS2003.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPaneCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPanelExtender.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPanelPersist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPaneSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPaneStripBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPaneStripVS2003.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPaneTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPaneTabCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockPaneTabVS2003.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockWindow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockWindowCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DockWindowSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DragHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DragHandlerBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\DummyControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\EventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\FloatWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\FloatWindowCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\HiddenMdiChild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\Interfaces.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\Measures.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\NestedDockingStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Docking\SplitterBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\Blue\ColorMixer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\Blue\Extender.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\Blue\FromBase\AutoHideStripFromBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\Blue\FromBase\AutoHideTabFromBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\Blue\FromBase\DockPaneCaptionFromBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\Blue\FromBase\DockPaneStripFromBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\Blue\FromBase\DockPaneTabFromBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\Blue\Override\AutoHideStripOverride.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\Blue\Override\DockPaneStripOverride.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\Helpers\DrawUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\VS2005\ColorMixer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\VS2005\Extender.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\VS2005\FromBase\AutoHideStripFromBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\VS2005\FromBase\AutoHideTabFromBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\VS2005\FromBase\DockPaneCaptionFromBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\VS2005\FromBase\DockPaneStripFromBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\VS2005\FromBase\DockPaneTabFromBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\VS2005\Override\AutoHideStripOverride.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\VS2005\Override\DockPaneStripOverride.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\Win32\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Extenders\Win32\Structs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Helpers\DrawHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Helpers\Localization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Helpers\LocalWindowsHook.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Helpers\ResourceHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Win32\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Win32\Gdi32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Win32\Structs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Docking\Win32\User32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\Category.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\BinaryReaderHelp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\CHMBtree.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\CHMFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\CHMIdxhdr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\CHMStrings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\CHMSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\CHMTocidx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\CHMTopics.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\CHMUrlstr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\CHMUrltable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\DumpingInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\enumerations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\FullTextEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\HHCParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\HHKParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\TopicEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmDecoding\UrlTableEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\ChmFileInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\HtmlHelpSystem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\Index.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\IndexItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\IndexTopic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\InformationType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\Interop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\Storage\FileObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\Storage\FileObjectCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\Storage\IBaseStorageWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\Storage\IStorageWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\Storage\ITStorageWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\TableOfContents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\TOCItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\helpIndex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\HelpProviderEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\helpSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\HelpToolTipWindow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\HitEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\IHelpViewer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\IndexEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\InfoTypeCategoryFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\ResourceHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\SearchEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\TocEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\TocTree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\TopicsFound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actinium\HtmlHelp\UIComponents\TopicsFoundEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Actions\BookmarkActions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Actions\CaretActions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Actions\ClipBoardActions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Actions\FoldActions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Actions\FormatActions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Actions\HomeEndActions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Actions\IEditAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Actions\MiscActions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Actions\SelectionActions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\AbstractSegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\BookmarkManager\BookmarkManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\BookmarkManager\BookmarkManagerMemento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\BookmarkManager\IBookMarkManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\DefaultDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\DefaultTextEditorProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\DocumentEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\DocumentFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\FoldingStrategy\FoldingManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\FoldingStrategy\FoldMarker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\FoldingStrategy\IFoldingStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\FoldingStrategy\IndentFoldingStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\FoldingStrategy\ParserFoldingStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\FormattingStrategy\DefaultFormattingStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\FormattingStrategy\IFormattingStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\DefaultHighlightingStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\FontContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\HighlightBackground.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\HighlightColor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\HighlightInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\HighlightingColorNotFoundException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\HighlightingDefinitionParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\HighlightingManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\HighlightingStrategyFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\HighlightRuleSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\IHighlightingStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\NextMarker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\PrevMarker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\Span.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\SyntaxModes\FileSyntaxModeProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\SyntaxModes\ISyntaxModeFileProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\SyntaxModes\ResourceSyntaxModeProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\SyntaxModes\SyntaxMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\HighlightingStrategy\TextWord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\IDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\ISegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\ITextEditorProperties.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\LineManager\DefaultLineManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\LineManager\ILineManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\LineManager\LineManagerEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\LineManager\LineSegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\MarkerStrategy\MarkerStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\MarkerStrategy\TextMarker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\Selection\ColumnRange.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\Selection\DefaultSelection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\Selection\ISelection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\Selection\SelectionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\Selection\SelectionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\TextBufferStrategy\GapTextBufferStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\TextBufferStrategy\ITextBufferStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\TextBufferStrategy\StringTextBufferStrategy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Document\TextUtilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\AbstractMargin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\BracketHighlighter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\BrushRegistry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\Caret.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\CompletionWindow\AbstractCompletionWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\CompletionWindow\CodeCompletionListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\CompletionWindow\CodeCompletionWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\CompletionWindow\DeclarationViewWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\CompletionWindow\ICompletionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\CompletionWindow\ICompletionDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\FoldMargin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\GutterMargin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\HRuler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\IconBarMargin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\Ime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\InsightWindow\IInsightDataProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\InsightWindow\InsightWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\TextArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\TextAreaClipboardHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\TextAreaControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\TextAreaDragDropHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\TextAreaMouseHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\TextAreaUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\TextEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\TextEditorControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Gui\TextView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Undo\IUndoableOperation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Undo\UndoableDelete.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Undo\UndoableInsert.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Undo\UndoableReplace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Undo\UndoQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Undo\UndoStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Util\LookupTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Util\RtfWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Util\TextUtility.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Util\TipPainter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Util\TipPainterTools.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Util\TipSection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Util\TipSpacer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Util\TipSplitter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\TextEditor\Util\TipText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Attributes\Attributes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Configuration\WebServerConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Configuration\WebServerSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\ExceptionWebRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Interfaces\IResourceResolver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Interfaces\IServletPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\MimeManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Resolvers\ContentLocationResolver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Resolvers\EmbeddedLocationResolver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Resolvers\MyComputerResolver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Resolvers\ServletResolver.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\ResolverThreadPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Servlets\Modules\DirectoryTree.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Servlets\Modules\ErrorPageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Servlets\Modules\FilePane.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Servlets\Modules\MSHelp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Servlets\Modules\PictureCropper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Servlets\Modules\ShowPicture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Servlets\Modules\test.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Servlets\Modules\TestErrorPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Servlets\ServletPageBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Servlets\XsltServletPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Servlets\XsltServletPageBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\StaticResolverBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Utils\Util.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\Utils\XSLTRequestExtensionObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\WebRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\WebResponse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actinium\Xeon\WebServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\NTaskCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Delegates\Delegates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Enums\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\INAFOutput.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\INElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\INUIElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\INUIFavorites.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\INUIMediator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\INUIPropertyGrid.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\INUITabElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\INUITasks.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\INUITextEditor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Interfaces\INUITitleBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tracing\LogFileTraceListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\BaseList\BaseDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\BaseList\BaseListDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\BaseList\CtrlHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\BaseList\XPBaseList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Browser\AxSHDocVw.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Browser\HTMLInterfaces.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Browser\Interop\DocHostUIHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Browser\Interop\IHTMLDocument3.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Browser\Interop\Interop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Browser\Interop\IShellUIHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Browser\NBrowser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Button\NButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Charting\Charter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Charting\ChartLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Charting\ChartLines.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Charting\DataList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\ContentSystem\CSContent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ContentSystem\CSResults.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ContentSystem\CSSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ContentSystem\NAFPluginHelp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Favorites\INIFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Favorites\NFavorites.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Favorites\URLInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\FolderBrowser\FolderBrowser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Menu\MenuItemColorsStringConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Menu\NMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Output\NOutput.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Output\OutputChannel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Output\OutputChannelCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Popup\PopupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Popup\PopupWindowHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\RTF\NRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Splitter\NSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\StatusBar\NStatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\TabControl\ATP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\TabControl\NTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\TabControl\TabPageChangeEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Tasks\NTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UI\Tasks\NTasks.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\TitleBar\NTitleBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\XPCaption\XPCaption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utils\GenericValueEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils\PropertyBag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\WMDefs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Actinium\Docking\Controls\CodeDoc\InertButton.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\AutoHidePane.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\AutoHidePaneCollection.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\AutoHideStripBase.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\AutoHideStripVS2003.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\AutoHideTab.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\AutoHideTabCollection.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DisplayingDockList.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockContent.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockContentCollection.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockList.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockPane.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockPaneCaptionBase.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockPaneCaptionVS2003.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockPaneCollection.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockPanel.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockPanelExtender.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockPaneStripBase.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockPaneStripVS2003.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockPaneTab.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockPaneTabCollection.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockWindow.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\DockWindowCollection.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\Enums.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\EventArgs.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\FloatWindow.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\FloatWindowCollection.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\Interfaces.xml" />
+    <Content Include="Actinium\Docking\Docking\CodeDoc\NestedDockingStatus.xml" />
+    <Content Include="Actinium\Readme.txt" />
+    <Content Include="Actinium\Xeon\Servlets\Modules\Readme.txt" />
+    <EmbeddedResource Include="Actinium\Docking\Resources\DockPaneCaption.AutoHideNo.bmp" />
+    <EmbeddedResource Include="Actinium\Docking\Resources\DockPaneCaption.AutoHideYes.bmp" />
+    <EmbeddedResource Include="Actinium\Docking\Resources\DockPaneCaption.CloseDisabled.bmp" />
+    <EmbeddedResource Include="Actinium\Docking\Resources\DockPaneCaption.CloseEnabled.bmp" />
+    <EmbeddedResource Include="Actinium\Docking\Resources\DockPaneStrip.CloseDisabled.bmp" />
+    <EmbeddedResource Include="Actinium\Docking\Resources\DockPaneStrip.CloseEnabled.bmp" />
+    <EmbeddedResource Include="Actinium\Docking\Resources\DockPaneStrip.ScrollLeftDisabled.bmp" />
+    <EmbeddedResource Include="Actinium\Docking\Resources\DockPaneStrip.ScrollLeftEnabled.bmp" />
+    <EmbeddedResource Include="Actinium\Docking\Resources\DockPaneStrip.ScrollRightDisabled.bmp" />
+    <EmbeddedResource Include="Actinium\Docking\Resources\DockPaneStrip.ScrollRightEnabled.bmp" />
+    <EmbeddedResource Include="Actinium\Docking\Strings.resx" />
+    <EmbeddedResource Include="Actinium\HtmlHelp\Resources\ContentTree.bmp" />
+    <EmbeddedResource Include="Actinium\HtmlHelp\Resources\HH11.bmp" />
+    <EmbeddedResource Include="Actinium\HtmlHelp\UIComponents\helpIndex.resx">
+      <DependentUpon>helpIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actinium\HtmlHelp\UIComponents\helpSearch.resx">
+      <DependentUpon>helpSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actinium\HtmlHelp\UIComponents\TocTree.resx">
+      <DependentUpon>TocTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actinium\HtmlHelp\UIComponents\TopicsFound.resx">
+      <DependentUpon>TopicsFound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Actinium\TextEditor\RightArrow.cur" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\ASPX.xshd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\BAT-Mode.xshd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\Coco-Mode.xshd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\CPP-Mode.xshd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\CSharp-Mode.xshd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\HTML-Mode.xshd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\ILAsm-Mode.xshd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\Java-Mode.xshd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\JavaScript-Mode.xshd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\Mode.xsd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\PHP-Mode.xshd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\SyntaxModes.xml" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\Tex-Mode.xshd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\VBNET-Mode.xshd" />
+    <EmbeddedResource Include="Actinium\TextEditor\syntaxmodes\XML-Mode.xshd" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\Blank.htm" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\DirectoryTree.xslt" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\empty.ico" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\ErrorPageHandler.xslt" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\FilePane.xslt" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\ImageBrowser.htm" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\minus.ico" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\MSHelp.xslt" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\PageNotFound.htm" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\plus.ico" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\ShowPicture.xslt" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\Xeon.htm" />
+    <EmbeddedResource Include="Actinium\Xeon\Resources\Xeon.jpg" />
+    <EmbeddedResource Include="CSContent.bmp" />
+    <EmbeddedResource Include="CSResults.bmp" />
+    <EmbeddedResource Include="CSSearch.bmp" />
+    <EmbeddedResource Include="DockPanel.bmp" />
+    <EmbeddedResource Include="GenericValueEditor.bmp" />
+    <EmbeddedResource Include="GraphControl.bmp" />
+    <EmbeddedResource Include="HtmlHelp.UIComponents.helpIndex.bmp" />
+    <EmbeddedResource Include="HtmlHelp.UIComponents.helpSearch.bmp" />
+    <EmbeddedResource Include="HtmlHelp.UIComponents.TocTree.bmp" />
+    <EmbeddedResource Include="InertButton.bmp" />
+    <EmbeddedResource Include="NBrowser.bmp" />
+    <EmbeddedResource Include="NButton.bmp" />
+    <EmbeddedResource Include="NChartingControl.bmp" />
+    <EmbeddedResource Include="NeonBaseList.bmp" />
+    <EmbeddedResource Include="NFavorites.bmp" />
+    <EmbeddedResource Include="NOutput.bmp" />
+    <EmbeddedResource Include="NRichTextBox.bmp" />
+    <EmbeddedResource Include="NSplitter.bmp" />
+    <EmbeddedResource Include="NStatusBar.bmp" />
+    <EmbeddedResource Include="NTabControl.bmp" />
+    <EmbeddedResource Include="NTasks.bmp" />
+    <EmbeddedResource Include="NTitleBar.bmp" />
+    <EmbeddedResource Include="Resources\BackNavigationArrow.gif" />
+    <EmbeddedResource Include="Resources\CancelNavigation.gif" />
+    <EmbeddedResource Include="Resources\ForwardNavigationArrow.gif" />
+    <EmbeddedResource Include="Resources\HomeNavigation.gif" />
+    <EmbeddedResource Include="Resources\MiniArrowBottom.gif" />
+    <EmbeddedResource Include="Resources\MiniArrowLeft.gif" />
+    <EmbeddedResource Include="Resources\MiniArrowRight.gif" />
+    <EmbeddedResource Include="Resources\MiniArrowTop.gif" />
+    <EmbeddedResource Include="Resources\RefreshNavigation.gif" />
+    <EmbeddedResource Include="TextEditor.TextEditorControl.bmp" />
+    <EmbeddedResource Include="UI\BaseList\XPBaseList.resx">
+      <DependentUpon>XPBaseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Browser\NBrowser.resx">
+      <DependentUpon>NBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Charting\Charter.resx">
+      <DependentUpon>Charter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ContentSystem\CSContent.resx">
+      <DependentUpon>CSContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ContentSystem\CSResults.resx">
+      <DependentUpon>CSResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ContentSystem\CSSearch.resx">
+      <DependentUpon>CSSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Favorites\NFavorites.resx">
+      <DependentUpon>NFavorites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Menu\NMenuItem.resx">
+      <DependentUpon>NMenuItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Output\Exclamation.gif" />
+    <EmbeddedResource Include="UI\Output\Info.gif" />
+    <EmbeddedResource Include="UI\Output\NOutput.resx">
+      <DependentUpon>NOutput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Output\Question.gif" />
+    <EmbeddedResource Include="UI\Popup\PopupForm.resx">
+      <DependentUpon>PopupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StatusBar\NStatusBar.resx">
+      <DependentUpon>NStatusBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TabControl\NTabControl.resx">
+      <DependentUpon>NTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Tasks\NTasks.resx">
+      <DependentUpon>NTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\TitleBar\NTitleBar.resx">
+      <DependentUpon>NTitleBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\XPCaption\XPCaption.resx">
+      <DependentUpon>XPCaption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XPCaption.bmp" />
+    <None Include="Actinium\TextEditor\syntaxmodes\Mode.xsx">
+      <DependentUpon>Mode.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

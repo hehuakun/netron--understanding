@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{063F3227-D3E0-41C9-AA87-3A724857E272}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Automatology</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Netron.Automatology</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetronGraphLibrary\NetronGraphLib.csproj">
+      <Name>NetronGraphLib</Name>
+      <Project>{95C388C8-DD59-4993-BCC3-14A0862A24D8}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AffineMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BasicFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BitPlotter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Counter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RandomGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WolframIterator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XYCoordinates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XYPlotter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="YPlotter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Resources\AffineMap.gif" />
+    <EmbeddedResource Include="Resources\BasicFunction.gif" />
+    <EmbeddedResource Include="Resources\BitPlotter.gif" />
+    <EmbeddedResource Include="Resources\Counter.gif" />
+    <EmbeddedResource Include="Resources\Operator.gif" />
+    <EmbeddedResource Include="Resources\RandomGenerator.gif" />
+    <EmbeddedResource Include="Resources\Scripter.gif" />
+    <EmbeddedResource Include="Resources\Scripts\BiomorphScript.txt" />
+    <EmbeddedResource Include="Resources\Scripts\Moire.txt" />
+    <EmbeddedResource Include="Resources\Scripts\TemplateScript.txt" />
+    <EmbeddedResource Include="Resources\ShowValue.gif" />
+    <EmbeddedResource Include="Resources\SimpleNode.gif" />
+    <EmbeddedResource Include="Resources\TextLabel.gif" />
+    <EmbeddedResource Include="Resources\Value2Color.gif" />
+    <EmbeddedResource Include="Resources\Wolfram.gif" />
+    <EmbeddedResource Include="Resources\XYCoordinates.gif" />
+    <EmbeddedResource Include="Resources\XYPlotter.gif" />
+    <EmbeddedResource Include="Resources\YPlotter.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent>copy /Y "$(SolutionDir)\Automatology\bin\Debug\Automatology.dll" "$(SolutionDir)\Cobalt\bin\Debug\Automatologyogy.dll"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

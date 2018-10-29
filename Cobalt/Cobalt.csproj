@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6BB5E1B7-ABC5-409C-85FE-36517DF50516}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Cobalt.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>Cobalt</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Netron.Cobalt</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>Netron.Cobalt.Startup</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE; DEBUG</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.SHDocVw">
+      <Name>AxInterop.SHDocVw</Name>
+      <HintPath>..\Libs\AxInterop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <Name>ICSharpCode.SharpZipLib</Name>
+      <HintPath>..\Libs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SHDocVw">
+      <Name>Interop.SHDocVw</Name>
+      <HintPath>..\Libs\Interop.SHDocVw.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml">
+      <Name>Microsoft.mshtml</Name>
+      <HintPath>C:\Program Files\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll</HintPath>
+      <AssemblyFolderKey>hklm\primary interop assemblies</AssemblyFolderKey>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="MsHtmHstInterop">
+      <Name>MsHtmHstInterop</Name>
+      <HintPath>..\Libs\MsHtmHstInterop.dll</HintPath>
+    </Reference>
+    <Reference Include="NetronGraphLib">
+      <Name>NetronGraphLib</Name>
+      <HintPath>..\NetronGraphLibrary\bin\Debug\NetronGraphLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Drawing.Design">
+      <Name>System.Drawing.Design</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodonBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialogs\GaugeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\GaugeTube.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Dialogs\GraphPropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\LayerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\TemplatePropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enums\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mediator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NetronPrinter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SampleFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\BackgroundSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\ClassInheritance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\ControlsSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\FancyConectionsSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\GraphLibClassesSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\GraphLibInterfacesSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\ItemCannotMoveSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\LayeringSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\LayoutSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\NoLinkingSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\NoNewConnectionsSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\NoNewShapesSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\RandomTreeSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\SampleBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\ShapeEventsSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\Snap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\TreeAsCodeSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samples\ZOrderSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Startup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TabCodon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TabFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TabPages\BrowserTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPages\ChmTocTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPages\CodeTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPages\DiagramBrowserTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPages\DiagramReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabPages\FavTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPages\GraphTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPages\Interfaces\Interfaces.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TabPages\OutputExTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPages\PropertiesTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPages\ShapeViewerTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPages\TemplateTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPages\ZoomTab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Dialogs\GaugeForm.resx">
+      <DependentUpon>GaugeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\GraphPropertiesDialog.resx">
+      <DependentUpon>GraphPropertiesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\LayerDialog.resx">
+      <DependentUpon>LayerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\TemplatePropertiesDialog.resx">
+      <DependentUpon>TemplatePropertiesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetronSplash.jpg" />
+    <EmbeddedResource Include="TabPages\BrowserTab.resx">
+      <DependentUpon>BrowserTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPages\ChmTocTab.resx">
+      <DependentUpon>ChmTocTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPages\CodeTab.resx">
+      <DependentUpon>CodeTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPages\DiagramBrowserTab.resx">
+      <DependentUpon>DiagramBrowserTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPages\DiagramReport.resx">
+      <DependentUpon>DiagramReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPages\FavTab.resx">
+      <DependentUpon>FavTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPages\GraphTab.resx">
+      <DependentUpon>GraphTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPages\OutputExTab.resx">
+      <DependentUpon>OutputExTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPages\PropertiesTab.resx">
+      <DependentUpon>PropertiesTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPages\ShapeViewerTab.resx">
+      <DependentUpon>ShapeViewerTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPages\TemplateTab.resx">
+      <DependentUpon>TemplateTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPages\ZoomTab.resx">
+      <DependentUpon>ZoomTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Automatology\Automatology.csproj">
+      <Project>{063f3227-d3e0-41c9-aa87-3a724857e272}</Project>
+      <Name>Automatology</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entitology\Entitology.csproj">
+      <Project>{20ed271c-bb09-45df-bdd6-842aba827df8}</Project>
+      <Name>Entitology</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Neon\Neon\Neon.csproj">
+      <Project>{242ad318-16d0-4f17-8bc4-a0ccb37075e9}</Project>
+      <Name>Neon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

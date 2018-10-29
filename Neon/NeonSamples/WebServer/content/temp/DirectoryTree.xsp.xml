@@ -1,0 +1,17 @@
+<page>
+  <objects>
+    <directory name="A:" hasChildren="false" />
+    <directory name="C:" hasChildren="true" />
+    <directory name="D:" hasChildren="true" />
+    <directory name="E:" hasChildren="false" />
+    <directory name="K:" hasChildren="true" />
+    <directory name="M:" hasChildren="true" />
+    <directory name="N:" hasChildren="true" />
+    <directory name="O:" hasChildren="true" />
+    <directory name="R:" hasChildren="false" />
+    <directory name="S:" hasChildren="true" />
+    <directory name="T:" hasChildren="true" />
+    <directory name="X:" hasChildren="true" />
+    <directory name="Y:" hasChildren="true" />
+  </objects>
+</page>

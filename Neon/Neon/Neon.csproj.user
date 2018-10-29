@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastOpenVersion>7.10.3077</LastOpenVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ReferencePath>C:\temp\WorkInProgress20050504\Neon\Neon\bin\Debug\;C:\Documents and Settings\Swa\My Documents\The Netron Project\Works\NetronGraphFramework\wip\Neon\bin\Debug\;C:\temp\NetronUI\NetronUI\ICSharp\src\;C:\Documents and Settings\Swa\My Documents\The Netron Project\Works\NetronGraphFramework\NetronUI\NAFControls\bin\Debug\;C:\temp\NetronUI\NetronUI\NAFControls\bin\Debug\;C:\temp\NetronUI\NetronUI\NetronUISample\bin\Debug\;C:\Documents and Settings\Swa\My Documents\The Netron Project\Works\NetronGraphFramework\NetronUI\NetronUI\NetronUI\NetronUI\bin\Debug\;C:\temp\NetronUI\NetronUI\bin\Debug\;C:\temp\NetronUI\Neon\Neon\bin\Debug\;C:\Documents and Settings\Swa\My Documents\The Netron Project\Works\NetronGraphFramework\Neon\Neon\bin\Debug\;C:\temp\WIP\Neon\Neon\bin\Debug\;C:\temp\wip\Biotron III\BiotronIII\bin\Debug\;C:\temp\wip\Neon\bin\Debug\;C:\temp\wipsuccess\Neon\bin\Debug\;C:\Documents and Settings\Swa\My Documents\The Netron Project\Works\NetronGraphFramework\wipsuccess\Neon\bin\Debug\;C:\temp\WorkInProgress\Neon\Neon\bin\Debug\;C:\Documents and Settings\Swa\My Documents\The Netron Project\Works\WorkInProgress\Neon\Neon\bin\Debug\;d:\Documents and Settings\fvdseype\Mijn documenten\The Netron Project\Works\WorkInProgress20050606\Neon\Neon\bin\Debug\;d:\Documents and Settings\fvdseype\Mijn documenten\The Netron Project\Works\WorkInProgress\Neon\Neon\bin\Debug\;d:\Documents and Settings\fvdseype\Mijn documenten\The Netron Project\Works\WorkInProgress20050608\Neon\Neon\bin\Debug\;d:\Documents and Settings\fvdseype\Mijn documenten\The Netron Project\Works\WorkInProgress20050615\Neon\Neon\bin\Debug\;d:\Documents and Settings\fvdseype\Mijn documenten\The Netron Project\Works\WorkInProgress20060701a\Neon\Neon\bin\Debug\</ReferencePath>
+    <CopyProjectDestinationFolder />
+    <CopyProjectUncPath />
+    <CopyProjectOption>0</CopyProjectOption>
+    <ProjectView>ProjectFiles</ProjectView>
+    <ProjectTrust>0</ProjectTrust>
+    <PublishUrlHistory />
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>zh-CN</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <EnableASPDebugging>false</EnableASPDebugging>
+    <EnableASPXDebugging>false</EnableASPXDebugging>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>false</EnableSQLServerDebugging>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+    <RemoteDebugMachine />
+    <StartAction>Project</StartAction>
+    <StartArguments />
+    <StartPage />
+    <StartProgram />
+    <StartURL />
+    <StartWorkingDirectory />
+    <StartWithIE>true</StartWithIE>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <EnableASPDebugging>false</EnableASPDebugging>
+    <EnableASPXDebugging>false</EnableASPXDebugging>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>false</EnableSQLServerDebugging>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+    <RemoteDebugMachine />
+    <StartAction>Project</StartAction>
+    <StartArguments />
+    <StartPage />
+    <StartProgram />
+    <StartURL />
+    <StartWorkingDirectory />
+    <StartWithIE>true</StartWithIE>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Neon default</title>
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1">
+		<meta name="ProgId" content="VisualStudio.HTML">
+		<meta name="Originator" content="Microsoft Visual Studio .NET 7.1">
+		<STYLE>.Title { FONT-SIZE: 12pt; COLOR: steelblue; FONT-FAMILY: Verdana }
+	.Default { FONT-SIZE: 10pt; COLOR: slategray; FONT-FAMILY: Verdana }
+	A { FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana }
+	A:active { FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana }
+	A:link { FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana }
+	A:hover { FONT-SIZE: 10pt; COLOR: whitesmoke; FONT-FAMILY: Verdana; BACKGROUND-COLOR: lightsteelblue }
+		</STYLE>
+		<script language="javascript">
+		function custommethod(){external.CustomMethod();}
+		function changeui(how){external.ChangeUI(how);}
+		</script>
+	</head>
+	<body>
+		<h1>
+			&nbsp;</h1>
+		<P align="center">
+			<TABLE id="Table1" height="182" cellSpacing="1" cellPadding="1" width="602" border="0">
+				<TR>
+					<TD class="Title">Welcome to the Neon multi-tab browser demo</TD>
+				</TR>
+				<TR>
+					<TD class="Title"><hr color="steelblue">
+					</TD>
+				</TR>
+				<TR>
+					<TD class="Default">
+						<P>Click <A href="javascript:custommethod()">here</A> to call a custom method in 
+							the main application. The <I>CustomMethod</I> resides in the <I>Mediator</I> class 
+							and it allows you to access the full power of the CLR from within an HTML page. 
+							In this example the custom method will load a new browser tab and navigate to 
+							the Netron homepage.
+						</P>
+						<P>
+							You can modify the style of the tabs via an extender object in the Neon 
+							library:</P>
+						<UL>
+							<LI>
+								<A href="javascript:changeui('default')">default</A>
+							style
+							<LI>
+								<A href="javascript:changeui('neon')">Neon</A> style
+							</LI>
+						</UL>
+						<P>Note that all tab-pages will close before the UI is set to the new style. This 
+							is another example of inter-communication between browser document and the host 
+							(form).</P>
+						<P>&nbsp;</P>
+					</TD>
+				</TR>
+				<TR>
+					<TD><hr color="steelblue">
+					</TD>
+				</TR>
+			</TABLE>
+		</P>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+.Normal
+{
+	font-family:Verdana;
+	font-size: 10pt;
+	color: SlateGray;
+}
+.Title
+{
+	font-family:Verdana;
+	font-size: 14pt;
+	font-weight:bold;
+	color: #006699;
+}
+A:link
+{
+	text-decoration:underline;
+	color: DarkSlateGray;
+}
+.Footnote
+{
+	font-size:8pt;
+	font-family:Verdana;	
+	color: SlateGray;
+}
